@@ -93,8 +93,6 @@ async function getRandomCharacterInfo() {
     let responseEpisode = await fetch('https://rickandmortyapi.com/api/episode/10');
     let dataEpisode = await responseEpisode.json();
 
-    console.log({ img: data2.image, name: data2.name, episodes: data2.episode.length, firstEpisode: dataEpisode.name, dateEpisode: dataEpisode.air_date });
-
     return { img: data2.image, name: data2.name, episodes: data2.episode, firstEpisode: dataEpisode.name, dateEpisode: dataEpisode.air_date }
 }
 
